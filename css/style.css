@@ -10,26 +10,25 @@ body {
 
 .container {
   width: 90%;
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 h1 {
-  text-transform: uppercase;
   font-size: 1.5em;
-  text-align: center;
+  letter-spacing: 1.75px;
+  padding-bottom: 20px;
   padding-top: 10px;
-  padding-bottom: 10px;
-  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 h2 {
   font-family: "Times New Roman", serif;
   font-size: 2em;
   padding: 40px;
-  text-align: left;
   position: relative;
+  text-align: left;
 }
-
 
 .preview {
   min-height: 350px;
@@ -40,29 +39,33 @@ h2 {
 
 .baku {
   background-image: url(../images/baku.jpg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 0px, center;
   width: 100%;
 }
 
 .london {
   background-image: url(../images/london.png);
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 0px, center;
   width: 100%;
 }
 
 .madrid {
   background-image: url(../images/madrid.jpg);
-  background-position: center;
+  background-position: 0px 0px, center;
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
 }
 
 .rome {
   background-image: url(../images/rome.jpg);
-  background-position: center;
+  background-position: 0px 0px, center;
   background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
 }
 
@@ -86,7 +89,9 @@ h2 {
   .preview {
       float: left;
       width: 23.5%;
-      min-height: 200px;
-    }
+  }
+
+  .baku, .london, .madrid, .rome {
+    height: 100% !important;
   }
 }
