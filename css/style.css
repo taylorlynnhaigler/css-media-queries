@@ -72,7 +72,7 @@ h2 {
 
 
 /* media queries */
-/* tablets */
+/* tablets - two-column design */
 @media screen and (min-width: 575px){
 .preview {
     float: left;
@@ -82,7 +82,7 @@ h2 {
 }
 
 
-/* desktop */
+/* desktop - four-column design */
 
 @media screen and (min-width: 991px){
   .preview {
