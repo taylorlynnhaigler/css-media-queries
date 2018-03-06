@@ -9,8 +9,8 @@ body {
 }
 
 .container {
-  width: 90%;
   margin: 40px auto;
+  width: 90%;
 }
 
 h1 {
@@ -31,16 +31,16 @@ h2 {
 }
 
 .preview {
-  min-height: 350px;
-  max-width: 400px;
   margin: auto;
   margin-top: 20px;
+  min-height: 400px;
+  max-width: 400px;
 }
 
 .baku {
   background-image: url(../images/baku.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 0px 0px, center;
   width: 100%;
 }
@@ -48,7 +48,7 @@ h2 {
 .london {
   background-image: url(../images/london.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: 0px 0px, center;
   width: 100%;
 }
@@ -57,7 +57,7 @@ h2 {
   background-image: url(../images/madrid.jpg);
   background-position: 0px 0px, center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
 }
 
@@ -65,10 +65,9 @@ h2 {
   background-image: url(../images/rome.jpg);
   background-position: 0px 0px, center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
 }
-
 
 
 
@@ -77,8 +76,8 @@ h2 {
 @media screen and (min-width: 575px){
 .preview {
     float: left;
-    width: 48%;
     margin: 5px;
+    width: 48%;
   }
 }
 
@@ -89,9 +88,6 @@ h2 {
   .preview {
       float: left;
       width: 23.5%;
-  }
-
-  .baku, .london, .madrid, .rome {
-    height: 100% !important;
+      min-height: 300px;
   }
 }
